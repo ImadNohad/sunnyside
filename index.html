@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>TP5</title>
+	</head>
+	<body>
+		<header>
+			<div class="header-top">
+				<img class="logo" src="images/logo.svg" alt="" />
+				<nav>
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a class="contact" href="#">Contact</a></li>
+					</ul>
+				</nav>
+
+				<a id="mobile-menu" class="mobile-menu" href="#"
+					><img src="images/icon-hamburger.svg" alt=""
+				/></a>
+				<nav id="nav-mobile" class="nav-mobile">
+					<ul>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a class="contact" href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<p class="title">We are creatives</p>
+			<img class="arrow" src="images/icon-arrow-down.svg" alt="" />
+		</header>
+		<main>
+			<div class="grid">
+				<div class="item-text">
+					<h1>Transform your brand</h1>
+					<p>
+						We are a full-service creative agency specializing in helping brands
+						grow fast. Engage your clients through compelling visuals that do
+						most of the marketing for you.
+					</p>
+					<a class="yellow" href="#">Learn more</a>
+				</div>
+
+				<img
+					class="image-transform"
+					src="images/desktop/image-transform.jpg"
+					alt=""
+				/>
+
+				<img
+					class="image-standout"
+					src="images/desktop/image-stand-out.jpg"
+					alt=""
+				/>
+
+				<div class="item-text">
+					<h1>Stand out to the right audience</h1>
+					<p>
+						Using a collaborative formula of designers, researchers,
+						photographers, videographers, and copywriters, we’ll build and
+						extend your brand in digital places.
+					</p>
+					<span class="red"><a href="#">Learn more</a></span>
+				</div>
+
+				<div class="graphic photo-text">
+					<h3>Graphic Design</h3>
+					<p>
+						Great design makes you memorable. We deliver artwork that
+						underscores your brand message and captures potential clients’
+						attention.
+					</p>
+				</div>
+
+				<div class="photography photo-text">
+					<h3>Photography</h3>
+					<p>
+						Increase your credibility by getting the most stunning, high-quality
+						photos that improve your business image.
+					</p>
+				</div>
+			</div>
+
+			<section class="testimonials">
+				<h3>Client testimonials</h3>
+				<div class="testimonials-items">
+					<div>
+						<img src="images/image-emily.jpg" alt="" />
+						<p class="testimonials-text">
+							We put our trust in Sunnyside and they delivered, making sure our
+							needs were met and deadlines were always hit.
+						</p>
+						<p class="testimonial-name">Emily R.</p>
+						<p class="testimonial-title">Marketing Director</p>
+					</div>
+					<div>
+						<img src="images/image-thomas.jpg" alt="" />
+						<p class="testimonials-text">
+							Sunnyside’s enthusiasm coupled with their keen interest in our
+							brand’s success made it a satisfying and enjoyable experience.
+						</p>
+						<p class="testimonial-name">Thomas S.</p>
+						<p class="testimonial-title">Chief Operating Officer</p>
+					</div>
+					<div>
+						<img src="images/image-jennie.jpg" alt="" />
+						<p class="testimonials-text">
+							Incredible end result! Our sales increased over 400% when we
+							worked with Sunnyside. Highly recommended!
+						</p>
+						<p class="testimonial-name">Jennie F.</p>
+						<p class="testimonial-title">Business Owner</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="gallery">
+				<img
+					src="images/desktop/image-gallery-milkbottles.jpg"
+					alt="image-gallery-milkbottles"
+				/>
+				<img
+					src="images/desktop/image-gallery-orange.jpg"
+					alt="image-gallery-orange"
+				/>
+				<img
+					src="images/desktop/image-gallery-cone.jpg"
+					alt="image-gallery-cone"
+				/>
+				<img
+					src="images/desktop/image-gallery-sugarcubes.jpg"
+					alt="image-gallery-sugarcubes"
+				/>
+			</section>
+
+			<section class="gallery-mobile">
+				<img
+					src="images/mobile/image-gallery-milkbottles.jpg"
+					alt="image-gallery-milkbottles"
+				/>
+				<img
+					src="images/mobile/image-gallery-orange.jpg"
+					alt="image-gallery-orange"
+				/>
+				<img
+					src="images/mobile/image-gallery-cone.jpg"
+					alt="image-gallery-cone"
+				/>
+				<img
+					src="images/mobile/image-gallery-sugar-cubes.jpg"
+					alt="image-gallery-sugarcubes"
+				/>
+			</section>
+		</main>
+		<footer>
+			<img src="images/logofooter.svg" alt="" />
+			<ul class="footer-links">
+				<li><a href="">About</a></li>
+				<li><a href="">Services</a></li>
+				<li><a href="">Projects</a></li>
+			</ul>
+			<ul class="footer-socials">
+				<li><img src="images/icon-facebook.svg" alt="" /></li>
+				<li><img src="images/icon-instagram.svg" alt="" /></li>
+				<li><img src="images/icon-twitter.svg" alt="" /></li>
+				<li><img src="images/icon-pinterest.svg" alt="" /></li>
+			</ul>
+		</footer>
+
+		<script>
+			var mobileMenuButton = document.getElementById('mobile-menu')
+			mobileMenuButton.addEventListener('click', function (event) {
+				var navMobile = document.getElementById('nav-mobile')
+				navMobile.classList.toggle('show')
+			})
+		</script>
+	</body>
+</html>
